@@ -129,3 +129,50 @@ That goes threefold for this unit: MongoDB and Mongoose compose a challenging da
 
 **Good Luck!**
 https://damp-dawn-33750.herokuapp.com/ | https://git.heroku.com/damp-dawn-33750.git
+
+##################
+# Installing MongoDB on your Machine
+
+### Contents
+
+* [Installing MongoDB on your Machine](#installing-mongodb-on-your-machine)
+  * [1. Installing MongoDB on Windows](#1-installing-mongodb-on-windows)
+  * [2. Configuring MongoDB on Windows](#2-configuring-mongodb-on-windows)
+  * [3. Installing MongoDB on MacOS](#3-installing-mongodb-on-macos)
+  * [4. Configuring MongoDB on MacOS](#4-configuring-mongodb-on-macos)
+
+- - -
+
+## 3. Installing MongoDB on MacOS
+
+1. Run the following command in terminal:
+
+2. `brew install mongodb --with-openssl`
+
+- - -
+
+## 4. Configuring MongoDB on MacOS
+
+1. **IMPORTANT**: You need to create a data directory for your MongoDB installation, or it will not work. 
+
+2. Use the following exact commands (see note below if you want to know what these do):
+
+   1. `sudo mkdir -p /data/db`
+
+   2. `sudo chown -R $USER /data/db`
+
+   3. `sudo chmod go+w /data/db`
+
+3. With the data/db directory made, you're ready to run MongoDB. Enter this command in your terminal window: `mongod`
+
+4. **NOTE**: No "b" at the end, simply `mongod`
+
+5. If mongod didn’t exit from your window, great job! You’ve installed MongoDB. Your instructor will take it from here.
+
+6. If mongod starts but closes after a series of prompts, make sure you created the data/db directory in your root directory, MongoDB cannot run without this directory (see steps 4.1-4.2).
+
+7. If you’re still encountering issues starting mongod, please ask for assistance from one of the TAs or the instructor.
+
+8. If you do not want to use homebrew, you can alternatively follow these instructions: <https://docs.mongodb.com/v3.0/tutorial/install-mongodb-on-os-x/>. However, installing MongoDB without homebrew can be a bit of a headache. Installing homebrew on your mac will make your life as a web developer a ton easier.
+
+_The commands in #2 create a directory with administrative privileges, make your account the owner of that directory (instead of the "root" account owning it), and add write permissions to that directory so the apps you write are able to update your database_
