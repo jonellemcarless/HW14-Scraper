@@ -1,5 +1,12 @@
 # All the News That's Fit to Scrape
 
+#mLab thru heroku info
+To connect using the mongo shell:
+mongo ds343895.mlab.com:43895/heroku_ddb0m50l -u <dbuser> -p <dbpassword>
+To connect using a driver via the standard MongoDB URI (what's this?):
+mongodb://<dbuser>:<dbpassword>@ds343895.mlab.com:43895/heroku_ddb0m50l
+
+
 ### Overview
 
 In this assignment, you'll create a web app that lets users view and leave comments on the latest news. But you're not going to actually write any articles; instead, you'll flex your Mongoose and Cheerio muscles to scrape news from another site.
@@ -128,18 +135,10 @@ If you have any questions about this project or the material we have covered, pl
 That goes threefold for this unit: MongoDB and Mongoose compose a challenging data management system. If there's anything you find confusing about these technologies, don't hesitate to speak with someone from the Boot Camp team.
 
 **Good Luck!**
-https://damp-dawn-33750.herokuapp.com/ | https://git.heroku.com/damp-dawn-33750.git
+
 
 ##################
 # Installing MongoDB on your Machine
-
-### Contents
-
-* [Installing MongoDB on your Machine](#installing-mongodb-on-your-machine)
-  * [1. Installing MongoDB on Windows](#1-installing-mongodb-on-windows)
-  * [2. Configuring MongoDB on Windows](#2-configuring-mongodb-on-windows)
-  * [3. Installing MongoDB on MacOS](#3-installing-mongodb-on-macos)
-  * [4. Configuring MongoDB on MacOS](#4-configuring-mongodb-on-macos)
 
 - - -
 
